@@ -30,7 +30,17 @@ angular.module('myApp', [
   'myApp.templates',
   PRODUCTION_ONLY_END*/
   'myApp.directives',
-  'myApp.controllers'
+  'im.controller',
+  'im-dialog.controller',
+  'im-history.controller',
+  'im-send.controller',
+  'changelog-modal.controller',
+  'welcome.controller',
+  'channel-edit-modal.controller',
+  'channel-modal.controller',
+  'chat-create-modal.controller',
+  'chat-edit-modal.controller',
+  'chat-invite-link-modal.controller'
 ].concat(extraModules)).config(['$locationProvider', '$routeProvider', '$compileProvider', 'StorageProvider', function ($locationProvider, $routeProvider, $compileProvider, StorageProvider) {
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*(https?|ftp|file|blob|filesystem|chrome-extension|app):|data:image\//)
   $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|file|tg|mailto|blob|filesystem|chrome-extension|app):|data:/)
